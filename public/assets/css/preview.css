@@ -1,0 +1,68 @@
+.preview {
+    position: fixed;
+    border: 1px solid #ffff;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background: #282b5c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+.preview img {
+    width: 10%;
+    width: 35px;
+    height: 35px;
+}
+.preview h2{
+    width: 20%;
+    border: 1px solid #ffff;
+    color: #ffff;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.preview h2 .subtitle {
+    color: #1fb9b1;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.preview .icon {
+    width: 10%;
+    border: 1px solid #ffff;
+    font-size: 35px;
+    color: #ffff;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.preview .icon .bi{
+    cursor: pointer;
+    outline: none;
+}
+.preview .icon #download_music {
+    font-size: 25px;
+    margin: 10px;  
+}
+.preview .master_play .icon .bi:nth-child(3) {
+    border: 1px solid rgb(105, 105, 105, .1);
+    border-radius: 50%;
+    padding: 1px 5px 0px 7px;
+    margin: 0px 5px;
+}
+.preview .container-audio{
+    width: 60%;
+    border: 1px solid #ffff;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+audio {
+    width: 100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
