@@ -111,8 +111,6 @@ function set_value($key, $default = '')
 
 		return $default;
 	}
-
-	// return ''; hỏi phúc xem là cc j vậy
 }
 
 function set_select($key, $value, $default = '')

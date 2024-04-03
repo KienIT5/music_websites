@@ -231,7 +231,7 @@ body {
     flex: 1;
     margin: 0 5px;
 }
-.playlist_button,
+.playlist_button, .album_button, .artist_button,
 .recent_button {
     width: 100%;
     padding: 5px;
@@ -244,10 +244,13 @@ body {
 }
 
 .playlist_button:hover,
+.album_button:hover,
+.artist_button:hover,
 .recent_button:hover {
     background-color: #3b3f44;
 }
 .menu-side .menu-song::-webkit-scrollbar{
+    align-items: center;
     /* display:none; */
     overflow-y: auto;
     max-height: none;
@@ -259,12 +262,13 @@ body {
 .menu-song li {
     list-style: none;
     position: relative;
-    padding: 20px 5px 0px 0px;
+    padding: 5px 5px 5px 5px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
     cursor: pointer;
     transition: .3s linear;
+    border: 1px solid #ffff;
 }
 .menu-song li:hover {
     background: rgb(105, 105, 105);
@@ -284,7 +288,6 @@ body {
     color: #ffff;
     margin-left: 15px;
     width: 170px;
-    border: 1px solid #ffff;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
