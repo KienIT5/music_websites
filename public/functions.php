@@ -46,6 +46,7 @@
 		}
 		return false;
 	}
+	// tu day la code kien xu ly index---------------------------------------------------------------------
 	function get_user_playlists($uid) {
 		$query = "SELECT user_playlists.pid, playlist_name
 				FROM user_playlists
