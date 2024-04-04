@@ -1,5 +1,5 @@
 <?php
-    include "functions.php";
+    include "../public/core/functions.php";
     //chưa lấy được mã người dùng từ login lên là lấy mặc định
     $uid = 1;
     $user_playlists = get_user_playlists($uid);
@@ -24,9 +24,11 @@
         <div class="navigation">
             <ul>
                 <!-- <li><a href="#"><span class="fa fa-home"></span><span>Home</span></a></li> -->
+                <!-- dựa vào số lượng view nhưng do chưa có chưa hoạt động -->
                 <li><a href="#" id="songs_link"><span class="fa fas fa-book"></span><span>Top Music</span></a></li>
                 <!-- <li><a href="#"><span class="fa fas fa-book"></span><span>Your Library</span></a></li> -->
                 <li><a href="#"><span class="fa fas fa-plus-square"></span><span>Create Playlist</span></li>
+                <!-- csdl chưa có lấy được uid truyền vào nên chưa lấy đc -->
                 <li><a href="#" id="top_music_link"><span class="fa fas fa-heart"></span><span>Liked Songs</span></a></li>
             </ul>
         </div>
