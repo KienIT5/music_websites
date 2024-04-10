@@ -88,7 +88,6 @@
                 </div>
             <?php endforeach; ?>
             </div>
-			<hr>
         </div>
         <div class="menu-side">
             <div class="menu-buttons">
