@@ -26,7 +26,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         if(!empty($row) && $password == $row['password']) {
             authenticate($row);
             message("Login successful");
-            
             // Kiểm tra vai trò của người dùng và chuyển hướng tương ứng
             if ($row['role'] == 'admin') {
                 redirect('admin');
@@ -58,20 +57,3 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 	</section>
     <?php include "../app/pages/includes/footer.php";?>
 ?>
-	<section class="content">
- 
-		<div class="login-holder">
-
-		<?php if(message()):?>
-			<div class="alert"><?=message('',true)?></div>
-		<?php endif;?>
-
-			<form method="post">
-				<h2>Login</h2>
-				<input value="<?=set_value('username')?>" class="my-1 form-control" type="text" name="username" placeholder="Username">
-				<input value="<?=set_value('password')?>" class="my-1 form-control" type="password" name="password" placeholder="Password" >
-				<button class="my-1 btn " style="background-color:#5755FE;  border-radius: 5rem; color:#f7f7f7">Login</button>
-			</form>
-		</div>
-	</section>
-    <?php include "../app/pages/includes/footer.php";?>

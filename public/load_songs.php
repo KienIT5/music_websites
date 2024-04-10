@@ -1,5 +1,5 @@
 <?php
-include "functions.php";
+include "../app/core/functions.php";
 
 // Kiểm tra xem uid có tồn tại trong session hay không
 // if(isset($_SESSION['uid']) && isset($_GET['option']) && isset($_GET['id'])) {

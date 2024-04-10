@@ -1,5 +1,5 @@
 <?php
-    include "functions.php";
+    include "../app/core/functions.php";
     //chưa lấy được mã người dùng từ login lên là lấy mặc định
     $uid = 1;
     $user_playlists = get_user_playlists($uid);
